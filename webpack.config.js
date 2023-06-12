@@ -22,7 +22,7 @@ module.exports = {
         // exclude node_modules
         rules: [
             {
-                test: /\.(js)$/,
+                test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
                 use: ["babel-loader"],
             },
@@ -30,6 +30,6 @@ module.exports = {
     },
     resolve: {
         // pass all js files through Babel
-        extensions: ["*", ".js"],
+        extensions: ["*", ".js", ".jsx"],
     }
 };
